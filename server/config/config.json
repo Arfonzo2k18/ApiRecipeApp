@@ -1,0 +1,14 @@
+{
+    "development": {
+        "PORT": 3000,
+        "MONGODB_URI": "mongodb://localhost:27017/spicaproyect",
+        "JWT_SECRET": "SECRET#0201",
+        "JWT_EXP": "10m"
+    },
+    "production": {
+        "PORT": 80,
+        "MONGODB_URI": "mongodb://xxxxx/DB_Name",
+        "JWT_SECRET": "SECRET#0201",
+        "JWT_EXP": "2m"
+    }
+}
