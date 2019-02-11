@@ -20,10 +20,9 @@ module.exports.register = (req, res, next) => {
 
     if(req.body.foto != "") {
         var imagen = req.body.foto;
-        console.log(imagen);
         imagen = imagen.replace("\n","");
-        var nombrearchivo = "server/static/" + random.randomNumber() + ".jpg";
-        fs.writeFile(nombrearchivo, imagen, 'base64', function(err) {
+        var nombrearchivo = "/static/" + random.randomNumber() + ".jpg";
+        fs.writeFile("server" + nombrearchivo, imagen, 'base64', function(err) {
             if(err) {
                 console.log(err);
             }
