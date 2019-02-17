@@ -37,11 +37,6 @@ var userSchema = new mongoose.Schema({
         required: true,
         default: new Date()
     },
-    lastAccess: {
-        type: Date,
-        required: true,
-        default: new Date()
-    },
     imagen: {
         type: String,
         required: true,

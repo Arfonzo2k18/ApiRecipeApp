@@ -60,6 +60,11 @@ module.exports.getUserProfile = async (req, res, next) => {
     res.status(200).json(usuario);
 };
 
+module.exports.allUsers = async (req, res, next) => {
+    const users = await Usuario.find();
+    res.json(users);
+}
+
 /*
     user.save((err, doc) => {
         if (!err)
