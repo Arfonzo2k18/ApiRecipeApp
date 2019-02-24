@@ -17,6 +17,8 @@ module.exports.register = (req, res, next) => {
     user.password = req.body.password;
     user.fechanac = req.body.fechanac;
     user.biografia = req.body.biografia;
+    user.latitud = req.body.latitud;
+    user.altitud = req.body.altitud;
 
     if(req.body.foto != "") {
         var imagen = req.body.foto;

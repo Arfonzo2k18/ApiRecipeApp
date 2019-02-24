@@ -47,10 +47,12 @@ var userSchema = new mongoose.Schema({
         required: true
     },
     latitud: {
-        type: String
+        type: String,
+        default: '37.57894666666667'
     },
     altitud: {
-        type: String
+        type: String,
+        default: '-4.752691666666666'
     },
     saltSecret: String
 });
